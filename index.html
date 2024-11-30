@@ -1,78 +1,259 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <!--=============== FAVICON ===============-->
-        <link rel="shortcut icon" href="" type="image/x-icon">
+    <!--=============== FAVICON ===============-->
+    <link
+      rel="shortcut icon"
+      href="/assets/img/favicon.png"
+      type="image/x-icon" />
 
-        <!--=============== BOXICONS ===============-->
-        
-        
-        <!--=============== SWIPER CSS ===============-->
-        <link rel="stylesheet" href="">
+    <!--=============== BOXICONS ===============-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet" />
 
-        <!--=============== CSS ===============-->
-        <link rel="stylesheet" href="">
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
 
-        <title>Responsive real state website - Bedimcode</title>
-    </head>
-    <body>
-        <!--==================== HEADER ====================-->
-        <header class="header" id="header">
-            
-        </header>
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="/assets/css/styles.css" />
 
-        <!--==================== MAIN ====================-->
-        <main class="main">
-            <!--==================== HOME ====================-->
-            <section class="home section" id="home">
-                
-            </section>
+    <title>Responsive real state website</title>
+  </head>
+  <body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="" class="nav__logo">
+          HOLUX <i class="bx bxs-home-alt-2"></i>
+        </a>
 
-            <!--==================== LOGOS ====================-->
-            <section class="logos section">
-                
-            </section>
+        <div class="nav__menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link">
+                <i class="bx bx-home-alt-2"></i>
+                <span>Home</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#residence" class="nav__link">
+                <i class="bx bx-building-house"></i>
+                <span>Residence</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#value" class="nav__link">
+                <i class="bx bx-award"></i>
+                <span>Value</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#cotact" class="nav__link">
+                <i class="bx bxs-phone"></i>
+                <span>Contact</span>
+              </a>
+            </li>
+          </ul>
+        </div>
 
-            <!--==================== POPULAR ====================-->
-            <section class="section" id="popular">
-                
-            </section>
+        <a href="#" class="button nav__button">Subscribe</a>
+      </nav>
+    </header>
 
-            <!--==================== VALUE ====================-->
-            <section class="value section" id="value">
-                
-            </section>
+    <!--==================== MAIN ====================-->
+    <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <div class="home__data">
+            <h1 class="home__title">
+              Discover <br />
+              Most Suitable <br />
+              Property
+            </h1>
+            <p class="home__description">
+              Find a variety of a property that suits you very easily, forget
+              all difficulties in finding a residence for you
+            </p>
 
-            <!--==================== CONTACT ====================-->
-            <section class="contact section" id="contact">
-                
-            </section>
+            <form action="" class="home__search">
+              <i class="bx bxs-map"></i>
+              <input
+                type="search"
+                placeholder="search by location..."
+                class="home__search-input" />
+              <button class="button">Search</button>
+            </form>
 
-            <!--==================== SUBSCRIBE ====================-->
-            <section class="subscribe section">
-                
-            </section>
-        </main>
+            <div class="home__value">
+              <div>
+                <h1 class="home__value-number">9K <span>+</span></h1>
+                <span class="home__value-description">
+                  Premium <br />
+                  Product
+                </span>
+              </div>
+              <div>
+                <h1 class="home__value-number">2K <span>+</span></h1>
+                <span class="home__value-description">
+                  Happy <br />
+                  Customers
+                </span>
+              </div>
+              <div>
+                <h1 class="home__value-number">28K <span>+</span></h1>
+                <span class="home__value-description">
+                  Awards <br />
+                  Winning
+                </span>
+              </div>
+            </div>
+          </div>
 
-        <!--==================== FOOTER ====================-->
-        <footer class="footer section">
-            
-        </footer>
+          <div class="home__images">
+            <div class="home__orbe"></div>
+            <div class="home__img">
+              <img src="/assets/img/home.jpg" alt="home image" />
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <!--==================== LOGOS ====================-->
+      <section class="logos section">
+        <div class="logo__container container grid">
+          <div class="logo__img">
+            <img src="/assets/img/logo1.png" alt="logo1" />
+          </div>
+          <div class="logo__img">
+            <img src="/assets/img/logo2.png" alt="logo2" />
+          </div>
+          <div class="logo__img">
+            <img src="/assets/img/logo3.png" alt="logo3" />
+          </div>
+          <div class="logo__img">
+            <img src="/assets/img/logo4.png" alt="logo4" />
+          </div>
+        </div>
+      </section>
 
-        <!--========== SCROLL UP ==========-->
+      <!--==================== POPULAR ====================-->
+      <section class="popular section" id="popular">
+        <div class="container">
+          <span class="section__subtitle">Best Choice</span>
+          <h2 class="section__title">Popular Residence <span>.</span></h2>
 
+          <div class="popular__container swiper">
+            <div class="swiper-wrapper">
+              <article class="popular__card swiper-slide">
+                <img
+                  src="/assets/img/popular1.jpg"
+                  alt="popular1"
+                  class="popular__img" />
 
-        <!--=============== SCROLLREVEAL ===============-->
-        <script src=""></script>
+                <div class="popular__data">
+                  <h2 class="popular__price"><span>$</span>67,788</h2>
+                  <h1 class="popular__title">Garden City Assat</h1>
+                  <p class="popular__description">
+                    NewYork City University of New York Lima Public. Sol #9883
+                  </p>
+                </div>
+              </article>
 
-        <!--=============== SWIPER JS ===============-->
-        <script src=""></script>
+              <article class="popular__card swiper-slide">
+                <img
+                  src="/assets/img/popular2.jpg"
+                  alt="popular1"
+                  class="popular__img" />
 
-        <!--=============== MAIN JS ===============-->
-        <script src=""></script>
-    </body>
+                <div class="popular__data">
+                  <h2 class="popular__price"><span>$</span>53,788</h2>
+                  <h1 class="popular__title">Garden Orchard City </h1>
+                  <p class="popular__description">
+                    NewYork City University of New York Lima Public. Sol #9883
+                  </p>
+                </div>
+              </article>
+
+              <article class="popular__card swiper-slide">
+                <img
+                  src="/assets/img/popular3.jpg"
+                  alt="popular1"
+                  class="popular__img" />
+
+                <div class="popular__data">
+                  <h2 class="popular__price"><span>$</span>47,788</h2>
+                  <h1 class="popular__title">City Garden</h1>
+                  <p class="popular__description">
+                    NewYork City University of New York Lima Public. Sol #9883
+                  </p>
+                </div>
+              </article>
+
+              <article class="popular__card swiper-slide">
+                <img
+                  src="/assets/img/popular4.jpg"
+                  alt="popular1"
+                  class="popular__img" />
+
+                <div class="popular__data">
+                  <h2 class="popular__price"><span>$</span>73,788</h2>
+                  <h1 class="popular__title">York City Garden</h1>
+                  <p class="popular__description">
+                    NewYork City University of New York Lima Public. Sol #9883
+                  </p>
+                </div>
+              </article>
+
+              <article class="popular__card swiper-slide">
+                <img
+                  src="/assets/img/popular5.jpg"
+                  alt="popular1"
+                  class="popular__img" />
+
+                <div class="popular__data">
+                  <h2 class="popular__price"><span>$</span>65,788</h2>
+                  <h1 class="popular__title">Aliva Paradise</h1>
+                  <p class="popular__description">
+                    NewYork City University of New York Lima Public. Sol #9883
+                  </p>
+                </div>
+              </article>
+            </div>
+            <div class="swiper-button-next"><i class='bx bx-chevron-right' ></i></div>
+    <div class="swiper-button-prev"><i class='bx bx-chevron-left' ></i></div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== VALUE ====================-->
+      <section class="value section" id="value"></section>
+
+      <!--==================== CONTACT ====================-->
+      <section class="contact section" id="contact"></section>
+
+      <!--==================== SUBSCRIBE ====================-->
+      <section class="subscribe section"></section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer section"></footer>
+
+    <!--========== SCROLL UP ==========-->
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="/assets/js/scrollreveal.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="/assets/js/swiper-bundle.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+
+    <!--=============== MAIN JS ===============-->
+    <script src="/assets/js/main.js"></script>
+  </body>
 </html>
