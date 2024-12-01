@@ -412,13 +412,204 @@ button {
   left: calc(50% - 3rem)
 }
 /*=============== VALUE ===============*/
-
+.value__container {
+  row-gap: 3rem;
+}
+.value__images {
+  position: relative;
+  display: flex;
+  justify-content: center ;
+}
+.value__orbe {
+  width: 266px;
+  height: 316px;
+  background: hsl(224, 24%, 97%);
+  border-radius: 135px 135px 16px 16px;
+  transition: .3s;
+}
+.value__img{
+  position: absolute;
+  width: 250px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 125px 125px 12px 12px;
+  inset: 0;
+  margin: auto;
+  box-shadow: 0 16px 32px hsla(228, 66%, 25%, .25);
+}
+.value__description {
+  font-size: var(--small-font-size);
+  margin-bottom: 2rem;
+}
+.value__accordion {
+  display: grid;
+  row-gap: 1.5rem;
+}
+.value__accordion-item {
+  background-color: var(--body-color);
+  border: 2px solid var(--border-color);
+  padding: 1rem .75rem;
+  border-radius: .5rem;
+}
+.value__accordion-header {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.value__accordion-icon {
+  background-color: var(--first-color-lighten);
+  padding: 5px;
+  border-radius: .25rem;
+  font-size: 18px;
+  color: var(--first-color);
+  margin-right: .75rem;
+  transition: .3s;
+}
+.value__accordion-title {
+  font-size: var(--small-font-size);
+}
+.value__accordion-arrow {
+  display: inline-flex;
+  margin-left: auto;
+  font-size: 10px;
+  color: var(--first-color);
+  background-color: var(--first-color-lighten);
+  padding: .25rem;
+  border-radius: 2px;
+  transform: .3s;
+}
+.value__accordion-arrow i {
+  transition: .3s;
+}
+.value__accordion-description {
+  font-size: var(--smaller-font-size);
+  padding: 1.25rem 2rem 0 2.75rem;
+}
+.value__accordion-content {
+  overflow: hidden;
+  height: 0;
+  transition: all .25s ease;
+}
 /*Rotate icon and add shadows*/
-
+.accordion-open {
+  box-shadow: 0 12px 32px hsla(228, 66%, 45%, .1);
+}
+.accordion-open .value__accordion-arrow i {
+  transform: rotate(180deg);
+}
 /*=============== CONTACT ===============*/
+.contact__container {
+  row-gap: 3rem;
+}
+.contact__images {
+  position: relative;
+  display: flex;
+  justify-content: center ;
+}
+.contact__orbe {
+  width: 266px;
+  height: 316px;
+  background: hsl(224, 24%, 97%);
+  border-radius: 135px 135px 16px 16px;
+  transition: .3s;
+}
+.contact__img{
+  position: absolute;
+  width: 250px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 125px 125px 12px 12px;
+  inset: 0;
+  margin: auto;
+  box-shadow: 0 16px 32px hsla(228, 66%, 25%, .25);
+}
+.contact__description {
+  font-size: var(--small-font-size);
+  margin-bottom: 2rem;
+}
 
+.contact__card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem .75rem;
+}
+.contact__card-box {
+  background-color: var(--body-color);
+  border: 2px solid var(--border-color);
+  padding: 1.25rem .75rem;
+  border-radius: .5rem;
+  transition: .3s;
+
+  &:hover {
+    box-shadow: 0 8px 24px hsla(228, 66%, 45%, .1);
+  }
+}
+.contact__card-info {
+  display: flex;
+  align-items: flex-start;
+  column-gap: .75rem;
+  margin-bottom: 1.25rem;
+}
+.contact__card i {
+  background-color: var(--first-color-lighten);
+  padding: 6px;
+  border-radius: 6px;
+  font-size: 1.25rem;
+  color: var(--first-color);
+}
+.contact__card-title {
+  font-size: var(--normal-font-size);
+}
+.contact__card-description {
+  font-size: var(--smaller-font-size);
+}
+.contact__card-button {
+  font-size: var(--small-font-size);
+  padding: 14px 0;
+  width: 100%;
+  border-radius: .25rem;
+  background: var(--first-color-lighten);
+  color: var(--first-color);
+  font-weight: var(--font-semi-bold);
+  box-shadow: none;
+
+  &:hover {
+    background: var(--first-color);
+    color: var(--first-color-lighten);
+  }
+}
 /*=============== SUBSCRIBE ===============*/
+.subscribe {
+  padding: 2.5rem 0;
+}
+.subscribe__container {
+  padding: 3rem 2rem;
+  background: var(--first-color);
+  border: 6px solid var(--first-color-light);
+  border-radius: 1.5rem;
+  text-align: center;
+}
+.subscribe__title {
+  font-size: var(--h1-font-size);
+  margin-bottom: 1rem;
+  color: var(--first-color-lighten);
+}
+.subscribe__description {
+  font-size: var(--small-font-size);
+  color: var(--text-color-light);
+  margin-bottom: 2rem;
+}
+.subscribe__button {
+  background: var(--first-color-light);
+  font-size: var(--small-font-size);
+  border: 2px solid var(--first-color-lighten);
+  width: fit-content;
+  margin: 0 auto;
 
+  &:hover {
+    background: var(--first-color);
+  }
+}
 /*=============== FOOTER ===============*/
 
 /*=============== SCROLL BAR ===============*/
