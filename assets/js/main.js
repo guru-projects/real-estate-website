@@ -10,11 +10,28 @@ window.addEventListener("scroll", changeBackground);
 
 /*=============== SWIPER POPULAR ===============*/
 var swiper = new Swiper(".popular__container", {
-  spaceBetween: 32,
+  spaceBetween: 30,
   grabCursor: true,
   centeredSlides: true,
   slidesPreview: true,
   loop: true,
+  breakpoints: {
+        576: {
+          slidesPerView: 2,
+          centeredSlides: false,
+        },
+        768: {
+          slidesPerView: 3,
+        },
+        1024: {
+          slidesPerView: 3,
+          centeredSlides: false,
+        }, 
+        1300: {
+          slidesPerView: 3,
+          centeredSlides: false,
+        }
+    },
 
   navigation: {
     nextEl: ".swiper-button-next",
@@ -55,7 +72,7 @@ const scrollActive = () => {
 
   sections.forEach((current) => {
     const sectionHeight = current.offsetHeight,
-      sectionTop = current.offsetTop - 58,
+      sectionTop = current.offsetTop - 65,
       sectionId = current.getAttribute("id"),
       sectionsClass = document.querySelector(
         ".nav__menu a[href*=" + sectionId + "]"
