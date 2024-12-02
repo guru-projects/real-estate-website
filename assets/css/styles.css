@@ -99,13 +99,62 @@ button {
 }
 
 /*=============== THEME ===============*/
+.change-theme {
+  font-size: 1.25rem;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
 
+  &:hover {
+    font-size: 1rem;
+  }
+}
 /*========== Variables Dark theme ==========*/
-
+body.dark-theme {
+  --first-color: hsl(228, 66%, 62%);
+  --second-color: hsl(25, 57%, 54%);
+  --title-color: hsl(228, 8%, 95%);
+  --text-color: hsl(228, 8%, 70%);
+  --border-color: hsl(228, 16%, 14%);
+  --body-color: hsl(228, 12%, 8%);
+  --container-color: hsl(228, 16%, 12%);
+}
 /*========== 
     Color changes in some parts of 
     the website, in dark theme 
 ==========*/
+.dark-theme .home__search,
+.dark-theme .swiper-button-next,
+.dark-theme .swiper-button-prev {
+  border: 3px solid var(--border-color);
+}
+.dark-theme .nav__menu,
+.dark-theme .home__img,
+.dark-theme .popular__card:hover,
+.dark-theme .value__img,
+.dark-theme .accordion__open,
+.dark-theme .accordion-open .value__accordion-icon,
+.dark-theme .accordion-open .value__accordion-arrow,
+.dark-theme .contact__img,
+.dark-theme .contact__card-box:hover,
+.dark-theme .scrollup {
+  box-shadow: none;
+}
+.dark-theme .value__orbe,
+.dark-theme .contact__orbe,
+.dark-theme .value__accordion-icon,
+.dark-theme .value__accordion-arrow,
+.dark-theme .contact__card i,
+.dark-theme .contact__card-button,
+.dark-theme .subscribe__container {
+  background-color: var(--container-color);
+}
+.dark-theme .subscribe__container {
+  border: 6px solid var(--border-color);
+}
+.dark-theme .subscribe__description {
+  color: var(--text-color);
+}
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
@@ -211,16 +260,19 @@ button {
 /* Change background header */
 .scroll-header {
   background-color: var(--body-color);
-  box-shadow: 0 1px 4px hsla(228, 4%, 15%, .1);
+  box-shadow: 0 1px 4px hsla(228, 4%, 15%, 0.1);
 }
 .scroll-header .nav__logo {
+  color: var(--first-color);
+}
+.scroll-header .change-theme {
   color: var(--first-color);
 }
 /* Active link */
 .active-link {
   color: #fff;
-  background: linear-gradient(101deg, hsl(228,66%,53%), hsl(228, 66%, 47%));
-  box-shadow: 0 4px 8px hsla(228, 66%, 45%, .25);
+  background: linear-gradient(101deg, hsl(228, 66%, 53%), hsl(228, 66%, 47%));
+  box-shadow: 0 4px 8px hsla(228, 66%, 45%, 0.25);
 }
 /*=============== HOME ===============*/
 .home {
@@ -295,7 +347,7 @@ button {
     hsl(0, 0%, 67%) 100%
   );
   border-radius: 135px 135px 0 0;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .home__img {
@@ -315,16 +367,16 @@ button {
   background: linear-gradient(101deg, hsl(228, 66%, 53%), hsl(228, 66%, 53%));
   display: inline-block;
   color: #fff;
-  padding: .5rem 1.5rem;
-  border-radius: .5rem;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
   font-size: var(--normal-font-size);
   font-weight: var(--font-medium);
-  box-shadow: 0 4px 8px hsla(228, 66%, 45%, .25);
-  transition: .3s;
+  box-shadow: 0 4px 8px hsla(228, 66%, 45%, 0.25);
+  transition: 0.3s;
   cursor: pointer;
 
   &:hover {
-    box-shadow: 0 8px 12px hsla(228, 66%, 45%, .25);
+    box-shadow: 0 8px 12px hsla(228, 66%, 45%, 0.25);
   }
 }
 .nav__button {
@@ -340,11 +392,11 @@ button {
 }
 .logo__img {
   height: 60px;
-  opacity: .6;
-  transition: .3s;
+  opacity: 0.6;
+  transition: 0.3s;
 
   &:hover {
-    opacity: .9;
+    opacity: 0.9;
   }
 }
 /*=============== POPULAR ===============*/
@@ -352,16 +404,16 @@ button {
   padding: 1rem 0 5rem;
 }
 .popular__card {
- width: calc(100% - 1rem);
+  width: calc(100% - 1rem);
   background-color: var(--container-color);
   padding: 1rem;
   margin: 1px 1px 1px 1px;
   margin-top: 1rem;
-  transition: .4s;
+  transition: 0.4s;
   border-radius: 1rem;
 
   &:hover {
-    box-shadow: 0 8px 32px hsla(0, 0%, 10%, .1);
+    box-shadow: 0 8px 32px hsla(0, 0%, 10%, 0.1);
   }
 }
 .popular__img {
@@ -369,12 +421,12 @@ button {
   margin-bottom: 1rem;
 }
 .popular__data {
-  padding: 0 1rem 0 .5rem;
+  padding: 0 1rem 0 0.5rem;
 }
 .popular__price {
   font-size: var(--h2-font-size);
   color: var(--text-color);
-  margin-bottom: .25rem;
+  margin-bottom: 0.25rem;
 
   & span {
     color: var(--second-color);
@@ -382,7 +434,7 @@ button {
 }
 .popular__title {
   font-size: var(--h3-font-size);
-  margin-bottom: .75rem;
+  margin-bottom: 0.75rem;
 }
 .popular__description {
   font-size: var(--smaller-font-size);
@@ -391,17 +443,19 @@ button {
 .swiper {
   overflow: initial;
 }
-.swiper-button-next::after, .swiper-button-prev::after {
-  content: '';
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  content: "";
 }
-.swiper-button-next, .swiper-button-prev {
+.swiper-button-next,
+.swiper-button-prev {
   top: initial;
   bottom: 0;
   width: initial;
   height: initial;
   border: 2px solid var(--text-color-light);
   padding: 6px;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   font-size: 1.5rem;
   color: var(--first-color);
 
@@ -410,10 +464,10 @@ button {
   }
 }
 .swiper-button-next {
-  right: calc(50% - 3rem)
+  right: calc(50% - 3rem);
 }
 .swiper-button-prev {
-  left: calc(50% - 3rem)
+  left: calc(50% - 3rem);
 }
 /*=============== VALUE ===============*/
 .value__container {
@@ -422,16 +476,16 @@ button {
 .value__images {
   position: relative;
   display: flex;
-  justify-content: center ;
+  justify-content: center;
 }
 .value__orbe {
   width: 266px;
   height: 316px;
   background: hsl(224, 24%, 97%);
   border-radius: 135px 135px 16px 16px;
-  transition: .3s;
+  transition: 0.3s;
 }
-.value__img{
+.value__img {
   position: absolute;
   width: 250px;
   height: 300px;
@@ -439,7 +493,7 @@ button {
   border-radius: 125px 125px 12px 12px;
   inset: 0;
   margin: auto;
-  box-shadow: 0 16px 32px hsla(228, 66%, 25%, .25);
+  box-shadow: 0 16px 32px hsla(228, 66%, 25%, 0.25);
 }
 .value__description {
   font-size: var(--small-font-size);
@@ -452,8 +506,8 @@ button {
 .value__accordion-item {
   background-color: var(--body-color);
   border: 2px solid var(--border-color);
-  padding: 1rem .75rem;
-  border-radius: .5rem;
+  padding: 1rem 0.75rem;
+  border-radius: 0.5rem;
 }
 .value__accordion-header {
   display: flex;
@@ -463,11 +517,11 @@ button {
 .value__accordion-icon {
   background-color: var(--first-color-lighten);
   padding: 5px;
-  border-radius: .25rem;
+  border-radius: 0.25rem;
   font-size: 18px;
   color: var(--first-color);
-  margin-right: .75rem;
-  transition: .3s;
+  margin-right: 0.75rem;
+  transition: 0.3s;
 }
 .value__accordion-title {
   font-size: var(--small-font-size);
@@ -478,12 +532,12 @@ button {
   font-size: 10px;
   color: var(--first-color);
   background-color: var(--first-color-lighten);
-  padding: .25rem;
+  padding: 0.25rem;
   border-radius: 2px;
-  transform: .3s;
+  transform: 0.3s;
 }
 .value__accordion-arrow i {
-  transition: .3s;
+  transition: 0.3s;
 }
 .value__accordion-description {
   font-size: var(--smaller-font-size);
@@ -492,11 +546,11 @@ button {
 .value__accordion-content {
   overflow: hidden;
   height: 0;
-  transition: all .25s ease;
+  transition: all 0.25s ease;
 }
 /*Rotate icon and add shadows*/
 .accordion-open {
-  box-shadow: 0 12px 32px hsla(228, 66%, 45%, .1);
+  box-shadow: 0 12px 32px hsla(228, 66%, 45%, 0.1);
 }
 .accordion-open .value__accordion-arrow i {
   transform: rotate(180deg);
@@ -508,16 +562,16 @@ button {
 .contact__images {
   position: relative;
   display: flex;
-  justify-content: center ;
+  justify-content: center;
 }
 .contact__orbe {
   width: 266px;
   height: 316px;
   background: hsl(224, 24%, 97%);
   border-radius: 135px 135px 16px 16px;
-  transition: .3s;
+  transition: 0.3s;
 }
-.contact__img{
+.contact__img {
   position: absolute;
   width: 250px;
   height: 300px;
@@ -525,7 +579,7 @@ button {
   border-radius: 125px 125px 12px 12px;
   inset: 0;
   margin: auto;
-  box-shadow: 0 16px 32px hsla(228, 66%, 25%, .25);
+  box-shadow: 0 16px 32px hsla(228, 66%, 25%, 0.25);
 }
 .contact__description {
   font-size: var(--small-font-size);
@@ -535,23 +589,23 @@ button {
 .contact__card {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1.5rem .75rem;
+  gap: 1.5rem 0.75rem;
 }
 .contact__card-box {
   background-color: var(--body-color);
   border: 2px solid var(--border-color);
-  padding: 1.25rem .75rem;
-  border-radius: .5rem;
-  transition: .3s;
+  padding: 1.25rem 0.75rem;
+  border-radius: 0.5rem;
+  transition: 0.3s;
 
   &:hover {
-    box-shadow: 0 8px 24px hsla(228, 66%, 45%, .1);
+    box-shadow: 0 8px 24px hsla(228, 66%, 45%, 0.1);
   }
 }
 .contact__card-info {
   display: flex;
   align-items: flex-start;
-  column-gap: .75rem;
+  column-gap: 0.75rem;
   margin-bottom: 1.25rem;
 }
 .contact__card i {
@@ -571,7 +625,7 @@ button {
   font-size: var(--small-font-size);
   padding: 14px 0;
   width: 100%;
-  border-radius: .25rem;
+  border-radius: 0.25rem;
   background: var(--first-color-lighten);
   color: var(--first-color);
   font-weight: var(--font-semi-bold);
@@ -624,18 +678,20 @@ button {
   font-weight: var(--font-semi-bold);
   display: inline-flex;
   align-items: center;
-  column-gap: .25rem;
-  margin-bottom: .75rem;
+  column-gap: 0.25rem;
+  margin-bottom: 0.75rem;
 
   & i {
     font-size: 1.25rem;
   }
 }
-.footer__description, .footer__link {
+.footer__description,
+.footer__link {
   font-size: var(--small-font-size);
   font-weight: var(--font-medium);
 }
-.footer__content, .footer__links {
+.footer__content,
+.footer__links {
   display: grid;
 }
 .footer__content {
@@ -647,11 +703,11 @@ button {
   margin-bottom: 1rem;
 }
 .footer__links {
-  row-gap: .5rem;
+  row-gap: 0.5rem;
 }
 .footer__link {
   color: var(--text-color);
-  transition: .3s;
+  transition: 0.3s;
 
   &:hover {
     color: var(--title-color);
@@ -664,14 +720,15 @@ button {
 .footer__social-link {
   color: var(--text-color);
   font-size: 1.25rem;
-  transition: .3s;
+  transition: 0.3s;
 
   &:hover {
     color: var(--title-color);
   }
 }
 
-.footer__info, .footer__privacy {
+.footer__info,
+.footer__privacy {
   display: flex;
 }
 .footer__info {
@@ -681,7 +738,8 @@ button {
   text-align: center;
   row-gap: 1.5rem;
 }
-.footer__copy, .footer__privacy a {
+.footer__copy,
+.footer__privacy a {
   font-size: var(--smaller-font-size);
   font-family: var(--font-medium);
   color: var(--text-color);
@@ -700,21 +758,21 @@ button {
   font-size: 1.25rem;
   background-color: var(--container-color);
   color: var(--text-color);
-  box-shadow: 0 8px 12px hsla(228, 66%, 45%, .1);
-  padding: .35rem;
+  box-shadow: 0 8px 12px hsla(228, 66%, 45%, 0.1);
+  padding: 0.35rem;
   display: inline-flex;
-  border-radius: .25rem;
+  border-radius: 0.25rem;
   z-index: var(--z-tooltip);
-  transition: .3s;
+  transition: 0.3s;
 
   &:hover {
-    transform: translateY(-.25rem);
+    transform: translateY(-0.25rem);
     color: var(--first-color);
   }
 }
 /* Show Scroll Up*/
 .show-scroll {
-  bottom: 8rem
+  bottom: 8rem;
 }
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
