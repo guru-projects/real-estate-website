@@ -1,7 +1,17 @@
 # 🏡 Responsive Real State Website
 
-## Live Preview [Click Here](https://guru-projects.github.io/real-estate-website)
+## 🫵 Live Preview [Click Here](https://guru-projects.github.io/real-estate-website)
 
+### 🧑‍💻 My Learnings
+
+- Adopted the **Mobile-First Methodology** to design responsive and accessible web pages, ensuring compatibility with both mobile and desktop devices.
+- Utilized **CSS Variables** to follow best practices, enabling reusable and maintainable class components.
+- Implemented **Dark and Light Themes** using `CSS` and `JavaScript` for enhanced user experience.
+- Integrated **Swiper.js** to create smooth and customized carousel effects.
+- Learned and applied best practices to design an effective **Accordion/FAQ Section**.
+- Ensured compatibility across all mobile devices, delivering a visually appealing and user-friendly interface.
+
+  
 ### 🏡 Responsive Real State Website
 
 - Responsive Real State Website Using HTML CSS & JavaScript
