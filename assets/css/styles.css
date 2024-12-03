@@ -405,7 +405,7 @@ body.dark-theme {
 }
 .popular__card {
   width: calc(100% - 1rem);
-  background-color: var(--border-color);
+  background-color: var(--body-color);
   padding: 1rem;
   margin: 1px 1px 1px 1px;
   margin-top: 1rem;
