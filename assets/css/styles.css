@@ -155,6 +155,13 @@ body.dark-theme {
 .dark-theme .subscribe__description {
   color: var(--text-color);
 }
+.dark-theme .home__orbe {
+  background: linear-gradient(
+    180deg,
+    hsl(0, 0%, 16%) 93%,
+    hsl(0, 0%, 31%) 100%
+  );
+}
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
@@ -405,7 +412,7 @@ body.dark-theme {
 }
 .popular__card {
   width: calc(100% - 1rem);
-  background-color: var(--body-color);
+  background-color: var(--container-color);
   padding: 1rem;
   margin: 1px 1px 1px 1px;
   margin-top: 1rem;
@@ -957,6 +964,9 @@ body.dark-theme {
   }
   .popular__container {
     padding: 1rem 1rem 5rem;
+}
+.scrollup {
+  bottom: 3rem;
 }
 }
 /* For 2K & 4K resolutions */
