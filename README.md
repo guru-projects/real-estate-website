@@ -1,6 +1,6 @@
 # 🏡 Responsive Real State Website
 
-## 🫵 Live Preview [Click Here](https://guru-projects.github.io/real-estate-website)
+## 🫵 Live Preview [Click Here](https://guru-projects.github.io/real-estate-website){:target="_blank"}
 
 ### 🧑‍💻 My Learnings
 
